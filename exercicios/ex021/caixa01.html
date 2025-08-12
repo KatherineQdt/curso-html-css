@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+
+        /* Infomações extras: 
+        display: block;
+        tranforma  a caixa em box-level
+        display: inline;
+        tranforma a caixa em inline-level
+        display: inline-block;
+        tranforma uma cainxa em inline-level mas permite configurações de box-level como height e widht por exemplo
+        */
+
+        h1{
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkgray;
+
+            /* Você pode simplicar o border com: 
+            border: 10px solid darkgray;
+            */
+
+            /* Sempre organize em sentido horário: Cima, Direita, Baixo e Esquerda */
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /* Você pode simplicar a padding com: 
+            padding: 10px 10px 10px 10px 
+            lembre de manter na ordem do sentido horario
+            quando todos forem iguais, digite apenas uma vez, exemplo:
+            padding: 10px;
+            quando colocar apenas dois valores como no exemplo abaixo: 
+            padding: 10px 20px; 
+            isso significa que os valores de top e bottom serão o primeiro valor (10px)
+            e os valores de left e right serão o segundo valor (20px)
+            */
+
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+
+            /* margin: auto; --> Para centralizar a caixa */
+
+            /* Você pode simplicar a margin com: 
+            margin: 20px 20px 40px 20px;
+            Você pode tambem usar o comando auto para ajudar a centralizar a caixa: 
+            margin: 20px auto 40px auto;
+            No exemplo acima ele calculara o tamanho na tela e deixará a margem no tamanho ideal para centralizar a caixa
+            */
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+            /* ouline é a linha (ou tracejado) que fica dentro do espado da margin */
+
+            /* Você pode simplicar o outline com: 
+            outline: 5px dashed salmon;
+            */
+        }
+
+        a{
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixa Box-level</h1>
+    <p>Parágrafos também são exemplo de Box-level, mas os <a href="#">links são exemplos de caixas Inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
