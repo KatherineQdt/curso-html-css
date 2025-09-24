@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Responsivas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot{
+            background-color: #383838;
+            color: white;
+        }
+
+        thead > tr > th{
+            position: sticky; /* colável ou grudável */
+            top: 0;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+
+        div#contaiver{
+            overflow-x: auto; /* cria uma barra de rolagem só para o que estiver dentro do container */
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas em Telas Pequenas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem asperiores iure unde, possimus labore enim perferendis, blanditiis accusamus accusantium obcaecati omnis corporis sed soluta, similique expedita! Magnam laudantium, in debitis nesciunt quas eos obcaecati qui aliquid modi, repudiandae soluta eveniet eius ab pariatur ea accusantium atque dolores, labore sit molestiae. Veritatis, enim perferendis. Quos, illum modi doloremque dolor maiores eum ut nostrum officia, quaerat perferendis cum deleniti placeat. Optio cumque magni est eum sit exercitationem, facere deleniti quos, a nesciunt dolor officiis totam, ut mollitia praesentium nihil ad dolore! Soluta dolorem dicta temporibus ipsa odit, eveniet tempora nesciunt delectus omnis officia repellendus animi modi earum aliquid. Provident sit excepturi itaque labore beatae quas, suscipit, autem blanditiis nihil modi ad? Officiis velit atque minus molestias ratione iusto rerum possimus praesentium, consequuntur dolorem reiciendis impedit illo, doloremque, veritatis deserunt officia id necessitatibus deleniti suscipit ex laborum dolore. Earum maiores exercitationem voluptatum. Nulla, voluptates reiciendis! Laudantium, iste natus quae sed corporis, rerum aspernatur deleniti, eligendi dolore quidem tempore nam. Nam ratione blanditiis eligendi recusandae dolorum labore dignissimos veniam dolor nulla velit, sapiente, est nostrum amet perspiciatis vitae alias perferendis reiciendis dolorem voluptatem temporibus aliquam. Aspernatur corporis blanditiis suscipit eos impedit facilis provident modi.</p>
+    <div id="container">
+        <table>
+            <caption>Tabelas Responsivas</caption>
+            <thead>
+                <tr>
+                    <th>Produtos</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Ago</th>
+                    <th>Set</th>
+                    <th>Out</th>
+                    <th>Nov</th>
+                    <th>Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TV 40"</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Home Theater</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Samsung Galaxy S20</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>iPad Mini</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Playstation 4</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Lava Louças</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Amazon Echo</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
