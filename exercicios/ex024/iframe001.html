@@ -4,20 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de iFrame</title>
+    <style>
+        iframe{
+            width: 400px;
+            height: 400px;
+        } /* CSS PREVALECE SOBRE AS CONFIGS DIRETAS NO IFRAME */
+    </style>
 </head>
 <body>
     <h1>Testando o uso de um iFrame</h1>
     <p>
         Acessando o site do 
-        <iframe src="https://www.cursoemvideo.com" frameborder="0">
 
+        <!--
+            TAMANHO PADRAO DE IFRAME
+            300X150 px
+        -->
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500" scolling="no">
+            <!--
+                SCOLLING
+                    auto: padrão, se precisar ele coloca automaticamente
+                    yes: indiferente do tamanho do site, haverá barra de rolagem
+                    no: na teoria deveria impedir a rolagem, mas muitos navegadores permitem ignorando essa config
+
+                FRAMEBORDER
+                    0: sem borda
+                    1: (ou qualquer outro valor) com borda
+                    Essa configuração não dá as mesmas opções que 'border' no css, então em caso de estilização da borda, opte por fazer no css.
+            -->
+            <a href="https://www.cursoemvideo.com" target="_blank">Curso em Vídeo</a>
         </iframe> 
         para aprender a programar.
     </p>
     <p>
-        O site
-        <iframe src="https://www.google.com/?zx=1758741481097&no_sw_cr=1" frameborder="0"></iframe>
-        também é muito legal!
+        O repositório Guanabara no 
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0" height="500" width="500">
+            <a href="https://gustavoguanabara.github.io" target="_blank">GitHub</a>
+        </iframe>
+        tambem é bem legal
     </p>
 </body>
 </html>
