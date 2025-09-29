@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eaque libero architecto iure consequatur cumque explicabo, magni unde doloribus, enim sit sint assumenda maiores. Itaque sint exercitationem numquam alias repudiandae?</p>
+    <iframe src="paginas/pag004.html" sandbox="sandbox" referrerpolicy="no-referrer">
+        <!--
+            sandbox = sandbox - impede envio de informações por formulários
+            sandbox = allow-same-origin - permite o envio de informações apenas para aqueles que estão na mesma origem/servidor.
+            sandbox = allow-forms - permite formulários
+            sandbox = allows-cripts - permite scripts 
+            *você pode adicionais mais de uma propriedade no sandbox separando apenas com um espaço, sem vírgulas*
+            no-referrer - impede que o site colete qualquer informação do usuário
+        -->
+        <p>Seu navegador não é compatível</p>
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, necessitatibus sunt vitae vel dolorum laudantium fugit delectus perspiciatis doloremque nobis ducimus deleniti, hic possimus expedita, omnis aperiam sint quod voluptate.</p>
+</body>
+</html>
