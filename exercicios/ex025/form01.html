@@ -12,7 +12,14 @@
 </head>
 <body>
     <h1>Meu Primeiro Formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <!--
+            method
+                get: método padrão, aparecerá as informações do cadastro na url.
+                    Quando usar? Quando os dados não forem sensíveis, como senha, endereço, cep ou dados do cartão. O get permite que a url seja compartilhável, como por exemplo o google, que permite compartilhar o resultado de uma busca específica com outra pessoa. Get permite no máximo 3000 bites, aproximadamente 3000 letras. 
+                post: esconde as informações da url, não protege os dados mas nesse metodo não deixa a informação tão estampada.
+                    Quando usar? Para dados sensíveis, porem aprenda sobre https para oferecer segurança para os seus usuários. Quando seus dados tiverem mais de 3000 bites ou para envio de arquivos precisará usar o post. 
+        -->
         <p><label for="inome">Nome:</label> <!-- em "for=" você incluir a informação do id -->
             <input type="text" name="nome" id="inome"></p> <!-- name recomendavel para php, id recomentavel para javascript -->
         <p><label for="isobrenome">Sobrenome: </label>
