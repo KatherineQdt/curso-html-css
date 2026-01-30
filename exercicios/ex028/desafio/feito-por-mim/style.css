@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 2fr 1fr 6fr 1fr;
+    gap: 5px;
+
+    padding: 0px;
+}
+
+div {
+    padding: 20px;
+}
+
+.topo { 
+    background-color: #FFDAB9;
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+.menu {
+    background-color: #98FF98;
+    grid-area: 2 / 1 / 3 / 4;
+}
+
+.principal {
+    background-color: #FFFAF0;
+    grid-area: 3 / 1 / 4 / 3;
+}
+
+.secundario {
+    background-color: #97d4f0;
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+.rodape {
+    background-color: #FFDAB9;
+    grid-area: 4 / 1 / 5 / 4;
+}
